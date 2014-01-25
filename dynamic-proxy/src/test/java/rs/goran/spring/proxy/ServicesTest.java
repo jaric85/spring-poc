@@ -61,15 +61,15 @@ public class ServicesTest {
 
     @Test
     public void testServiceBCallMin() {
-        int given = Math.min(a, b);
-        int expected = services.min(a, b);
-        Assert.assertEquals(expected, given);
+        int expected = Math.min(a, b);
+        int actual = services.min(a, b);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testServiceCCallMax() {
-        int given = Math.max(a, b);
-        int expected = services.max(a, b);
-        Assert.assertEquals(expected, given);
+        int expected = Math.max(a, b);
+        int actual = services.max(a, b);
+        Assert.assertEquals(expected, actual);
     }
 }
