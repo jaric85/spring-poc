@@ -8,6 +8,6 @@
     <context:component-scan base-package="rs.goran.spring"/>
 
     <bean id="serviceLocatorFactory" class="rs.goran.spring.proxy.ServiceLocatorFactory"/>
-    <bean id="serviceLocatorImpl" factory-bean="serviceLocatorFactory" factory-method="createServiceDelegate"/>
+    <bean id="services" factory-bean="serviceLocatorFactory" factory-method="createServiceDelegate"/>
 
 </beans>
